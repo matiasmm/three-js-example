@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>House</title>
+
+
+        <link rel="stylesheet" href="/css/main.css"/>
+    </head>
+    <body>
+
+
+        <ul class="info hidden">
+            <li style="color:red">X</li>
+            <li style="color:green">Y</li>
+            <li style="color:blue">Z</li>
+        </ul>
+
+        <script type="text/javascript" src="/bower_components/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="/bower_components/threejs/build/three.js"></script>
+        <script type="text/javascript" src="/bower_components/tweenjs/src/Tween.js"></script>
+        <script type="text/javascript" src="/bower_components/three.js-controls/src/OrbitControls.js"></script>
+        <script type="text/javascript" src="/bower_components/threex.keyboardstate/threex.keyboardstate.js"></script>
+
+        <script type="text/javascript">
+            (function(){
+                var base= '/js/', routes = [
+                    'lights/LivingLight.js',
+                    'cameras/MainCamera.js',
+                    'player/Player.js',
+
+                    'walls/init.js',
+                    'walls/config.js',
+                    'walls/Wall.js',
+
+                    'debug/axis.js',
+                    'Handler.js',
+                    'main.js'
+                ];
+
+                for(var k in routes){
+                    document.write('<script type="text\/javascript" src="'+ base + routes[k] +'"><\/script>');
+                }
+            })()
+        </script>
+
+    </body>
+</html>

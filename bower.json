@@ -1,0 +1,22 @@
+{
+  "name": "js-bootstrapper",
+  "version": "0.0.0",
+  "homepage": "https://github.com/matiasmm/js-bootstrapper",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  },
+  "devDependencies": {
+    "threejs": "*",
+    "three.js-controls": "~0.0.67",
+    "threex.keyboardstate": "*",
+    "tweenjs": "*"
+  }
+}
